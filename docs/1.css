@@ -1,0 +1,255 @@
+*{margin: 0; padding: 0;}
+body{
+	font-family: 'Open Sans', sans-serif;}
+/* Header customize */
+.navbar-brand, .navbar-item{
+	font-family: 'Open Sans', sans-serif;
+}
+nav.navbar{
+	height: 60px;
+	position: fixed;
+}
+.container.menu{
+	margin: auto;	
+	width: 90%;
+	z-index: 2;
+	max-width: 90%;
+}
+.navbar{
+	border-radius: 0px;
+	background-color: rgba(255,0,0,0)!important;
+}
+.navbar-light .navbar-brand, .navbar-light .navbar-toggler.big-logo{
+	font-size: 19px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.7);
+	display: block;
+	transition: all 200ms ease-in-out;
+	line-height: 40px;
+}
+.nav-item{
+	padding-left: 20px;
+}
+.navbar-light .navbar-brand.big-logo:hover{
+	color: white;
+}
+.navbar-light .navbar-nav .nav-link{
+	font-size: 14px;
+	font-weight: 700;
+	color: rgba(255,255,255,0.7);
+	transition: all 200ms ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+	color: white;
+}
+/* Banner customize */
+.banner{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 647px;
+	background-image: url('img/header.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.banner .row{
+	height: 250px;
+	margin: auto;
+	width: 70%;
+	display: flex;
+	text-align: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	top: 45%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.banner h1.title{
+	font-size: 2rem;
+	color: white;
+}
+@media screen and (min-width: 1200px) {
+	.banner h1.title{
+		font-size: 4rem;
+	}
+}
+@media screen and (min-width: 992px) {
+	.banner h1.title{
+		font-size: 3rem;
+	}
+}
+.banner .row span{
+	width: 50px;
+	border-top: 3px solid #f05f40;
+	margin-top: 20px;
+}
+.banner .row .details-wrap{
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+}
+.banner .row .details{
+	color: white;
+	width: 70%;
+	font-size: 0.9rem;
+	display: inline-block;
+}
+@media screen and (min-width: 768px){
+	.banner .row .details{
+		font-size: 1.15rem;
+	}
+}
+a.find-out{
+	padding: 20px 40px;
+	border-radius: 35px;
+	background-color: #f05f40;
+	border-color: #f05f40;
+	color: white;
+	font-weight: bold;
+}
+a.find-out:hover{
+	color: white;
+	background-color: #ee4b28!important;
+	border-color: #ee4b28;
+}
+/* Description customise */
+.description{
+	width: 100%;
+	height: 500px;
+	background-color: #f05f40;
+	color: white;
+}
+.des-wrap{
+	width: 60%;
+	display: block;
+	margin: auto;
+}
+.des-title{
+	font-size: 2rem;
+	padding-top: 120px;
+}
+.description span{
+	width: 45px;
+	border-bottom: 3px solid white;
+	display: inline-block;
+	margin: 20px 0px;
+}
+.des-text{
+	display: inline-block;
+}
+.button{
+	line-height: 60px;
+	padding: 0px 30px;
+	border-color: white;
+	border-radius: 30px;
+	background-color: white;
+	color: black;
+	font-weight: bold;
+	display: inline-block;
+}
+.button:hover{
+	background-color: #e2e6ea;
+	color: black;
+	border-color: #e2e6ea;
+	display: inline-block;
+}
+/* Service customize */
+.service{
+	width: 100%;
+	background-color: white;
+}
+.ser-wrap{
+	margin: auto;
+	padding-top: 40px;
+	padding-bottom: 120px;
+}
+.ser-title{
+	font-size: 2rem;
+	margin-top: 80px;
+	display: block;
+}
+.ser-wrap span{
+	width: 50px;
+	display: inline-block;
+	border-bottom: 3px solid #f05f40;
+	margin-bottom: 70px;
+	margin-top: 20px;
+}
+.item i.fa{
+	font-size: 4rem;
+	color: #f05f40;
+}
+.item-title{
+	font-size: 1.75rem;
+	margin: 15px 0px;
+}
+/* Portfolio customize */
+.project{
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+}
+.cat-title{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	opacity: 0;
+	transition: all 200ms;
+	padding-top: 20%;
+}
+.project img{
+	transition: 2000ms;
+}
+.text-faded{
+	color: rgba(255,255,255,0.7);
+	font-size: 16px;
+}
+.cat-title .cat-name{
+	color: white;
+	font-size: 22px;
+}
+.project:hover .cat-title{
+	opacity: 1;
+	background-color: rgba(240,95,64,.9);
+}
+.project:hover img{
+	transform: scale(1.2, 1.2);
+}
+/* download customize */
+.download{
+	background-color:#212529;
+	color: white;
+	padding: 120px 0px;
+}
+.download a.button{
+	color: #212529;
+	margin-top: 20px;
+}
+.download a.button:hover{
+	color: #212529;
+}
+/* contact customize */
+.contact-wrapper{
+	width: 60%;
+	margin: auto;
+	padding-top: 130px;
+	padding-bottom: 100px;
+}
+.contact-wrapper span{
+	width: 50px;
+	display: inline-block;
+	border-bottom: 3px solid #f05f40;
+	margin: 15px 0px;
+}
+.contact-wrapper p{
+	line-height: 1.5;
+	font-weight: 400;
+	margin-bottom: 3rem;
+}
